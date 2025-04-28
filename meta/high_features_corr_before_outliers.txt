@@ -1,0 +1,42 @@
+FLAG_EMP_PHONE <--> NAME_INCOME_TYPE_Pensioner | correlation = -0.9998
+DAYS_EMPLOYED <--> NAME_INCOME_TYPE_Pensioner | correlation = 0.9998
+DAYS_EMPLOYED <--> FLAG_EMP_PHONE | correlation = -0.9998
+OBS_30_CNT_SOCIAL_CIRCLE <--> OBS_60_CNT_SOCIAL_CIRCLE | correlation = 0.9986
+AMT_CREDIT <--> AMT_GOODS_PRICE | correlation = 0.9866
+
+PREV_AVG_AMT_APPLICATION <--> PREV_AVG_AMT_CREDIT | correlation = 0.9762
+
+PREV_COUNT <--> Repeater | correlation = 0.9741
+
+Consumer loans <--> POS | correlation = 0.9723
+
+REGION_RATING_CLIENT <--> REGION_RATING_CLIENT_W_CITY | correlation = 0.9529
+
+PREV_COUNT <--> XAP | correlation = 0.9093
+
+XAP <--> Repeater | correlation = 0.8951
+
+Cash loans <--> Cash_x | correlation = 0.8946
+Revolving loans <--> Cards | correlation = 0.8847
+
+Consumer loans <--> XAP_NAME_CASH_LOAN_PURPOSE | correlation = 0.8844
+
+CNT_CHILDREN <--> CNT_FAM_MEMBERS | correlation = 0.8831
+REG_REGION_NOT_WORK_REGION <--> LIVE_REGION_NOT_WORK_REGION | correlation = 0.8681
+
+DEF_30_CNT_SOCIAL_CIRCLE <--> DEF_60_CNT_SOCIAL_CIRCLE | correlation = 0.8637
+
+PREV_COUNT <--> Cash loans | correlation = 0.8600
+
+POS <--> XAP_NAME_CASH_LOAN_PURPOSE | correlation = 0.8587
+
+NAME_CONTRACT_TYPE <--> Documents_count | correlation = 0.8540
+
+APPROVED_STATUS_COUNT <--> XAP | correlation = 0.8478
+REFUSED_STATUS_COUNT <--> HC | correlation = 0.8462
+
+Cash loans <--> Repeater | correlation = 0.8447
+
+REG_CITY_NOT_WORK_CITY <--> LIVE_CITY_NOT_WORK_CITY | correlation = 0.8316
+
+Cash loans <--> Cash | correlation = 0.8064
