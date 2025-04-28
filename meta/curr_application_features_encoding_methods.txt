@@ -1,0 +1,282 @@
+TARGET unique values: [1 0]
+
+NAME_CONTRACT_TYPE unique values: ['Cash loans' 'Revolving loans']   -> Cash laons=1  O=0
+
+CODE_GENDER unique values: ['M' 'F' 'XNA']                           -> M&XNA=1  O=0
+
+FLAG_OWN_CAR unique values: ['N' 'Y']				 -> Y=1 N=0												
+
+FLAG_OWN_REALTY unique values: ['Y' 'N']                         -> Y=1 N=0
+
+CNT_CHILDREN unique values: [ 0  1  2  3  4  7  5  6  8  9 11 12 10 19 14]
+
+AMT_INCOME_TOTAL unique values: [202500.  270000.   67500.  ...  96768.  546250.5 113062.5]
+
+AMT_CREDIT unique values: [ 406597.5 1293502.5  135000.  ...  181989.   743863.5 1391130. ]
+
+AMT_ANNUITY unique values: [24700.5 35698.5  6750.  ... 71986.5 58770.  77809.5]
+
+AMT_GOODS_PRICE unique values: [ 351000.  1129500.   135000.  ...  453465.   143977.5  743863.5]
+
+NAME_TYPE_SUITE XXXX
+
+NAME_INCOME_TYPE unique values: ['Working' 'State servant' 'Commercial associate' 'Pensioner' 'Unemployed'
+ 'Student' 'Businessman' 'Maternity leave']  -> check the percentage first or TargetEncoding
+
+NAME_EDUCATION_TYPE unique values: ['Secondary / secondary special' 'Higher education' 'Incomplete higher'
+ 'Lower secondary' 'Academic degree']   -> Label Encoding 'Secondary / secondary special'=1 'Higher education'=3 'Incomplete higher'=2 'Lower secondary'=0 'Academic degree'=4
+
+NAME_FAMILY_STATUS unique values: ['Single / not married' 'Married' 'Civil marriage' 'Widow' 'Separated'
+ 'Unknown']     ->  check the percentage first or TargetEncoding
+
+NAME_HOUSING_TYPE unique values: ['House / apartment' 'Rented apartment' 'With parents'
+ 'Municipal apartment' 'Office apartment' 'Co-op apartment']    -> 
+
+REGION_POPULATION_RELATIVE unique values: [0.018801 0.003541 0.010032 0.008019 0.028663 0.035792 0.003122 0.018634
+ 0.019689 0.0228   0.015221 0.031329 0.016612 0.010006 0.020713 0.010966
+ 0.04622  0.025164 0.006296 0.026392 0.018029 0.019101 0.030755 0.008575
+ 0.01885  0.006207 0.009175 0.007305 0.007114 0.009334 0.022625 0.01452
+ 0.006629 0.00733  0.032561 0.00496  0.072508 0.009657 0.02461  0.003069
+ 0.020246 0.018209 0.009549 0.007274 0.002134 0.010276 0.003813 0.003818
+ 0.00712  0.0105   0.010147 0.010643 0.008866 0.00702  0.002506 0.005313
+ 0.006233 0.008474 0.005144 0.011657 0.008625 0.014464 0.004849 0.006008
+ 0.00963  0.005002 0.006852 0.011703 0.006305 0.010556 0.00823  0.006671
+ 0.002042 0.005084 0.008068 0.001333 0.001417 0.001276 0.000938 0.000533
+ 0.00029 ]
+
+DAYS_BIRTH unique values: [ -9461 -16765 -19046 ...  -7951  -7857 -25061] -> change to years and round 
+
+DAYS_EMPLOYED unique values: [  -637  -1188   -225 ... -12971 -11084  -8694]
+
+DAYS_REGISTRATION unique values: [ -3648.  -1186.  -4260. ... -16396. -14558. -14798.]
+
+DAYS_ID_PUBLISH unique values: [-2120  -291 -2531 ... -6194 -5854 -6211]
+
+OWN_CAR_AGE unique values: XXX >65% nulls
+
+FLAG_MOBIL unique values: [1 0]
+
+FLAG_EMP_PHONE unique values: [1 0]
+
+FLAG_WORK_PHONE unique values: [0 1]
+
+FLAG_CONT_MOBILE unique values: [1 0]
+
+FLAG_PHONE unique values: [1 0]
+
+FLAG_EMAIL unique values: [0 1]
+
+OCCUPATION_TYPE unique values: XXX >30% nulls  
+
+CNT_FAM_MEMBERS unique values: [ 1.  2.  3.  4.  5.  6.  9.  7.  8. 10. 13. nan 14. 12. 20. 15. 16. 11.]
+
+REGION_RATING_CLIENT unique values: [2 1 3]
+
+REGION_RATING_CLIENT_W_CITY unique values: [2 1 3]
+
+WEEKDAY_APPR_PROCESS_START unique values: ['WEDNESDAY' 'MONDAY' 'THURSDAY' 'SUNDAY' 'SATURDAY' 'FRIDAY' 'TUESDAY'] -> label encoding 
+
+HOUR_APPR_PROCESS_START unique values: [10 11  9 17 16 14  8 15  7 13  6 12 19  3 18 21  4  5 20 22  1  2 23  0]
+
+REG_REGION_NOT_LIVE_REGION unique values: [0 1]
+
+REG_REGION_NOT_WORK_REGION unique values: [0 1]
+
+LIVE_REGION_NOT_WORK_REGION unique values: [0 1]
+
+REG_CITY_NOT_LIVE_CITY unique values: [0 1]
+
+REG_CITY_NOT_WORK_CITY unique values: [0 1]
+
+LIVE_CITY_NOT_WORK_CITY unique values: [0 1]
+
+ORGANIZATION_TYPE unique values: ['Business Entity Type 3' 'School' 'Government' 'Religion' 'Other' 'XNA'
+ 'Electricity' 'Medicine' 'Business Entity Type 2' 'Self-employed'
+ 'Transport: type 2' 'Construction' 'Housing' 'Kindergarten'
+ 'Trade: type 7' 'Industry: type 11' 'Military' 'Services'
+ 'Security Ministries' 'Transport: type 4' 'Industry: type 1' 'Emergency'
+ 'Security' 'Trade: type 2' 'University' 'Transport: type 3' 'Police'
+ 'Business Entity Type 1' 'Postal' 'Industry: type 4' 'Agriculture'
+ 'Restaurant' 'Culture' 'Hotel' 'Industry: type 7' 'Trade: type 3'
+ 'Industry: type 3' 'Bank' 'Industry: type 9' 'Insurance' 'Trade: type 6'
+ 'Industry: type 2' 'Transport: type 1' 'Industry: type 12' 'Mobile'
+ 'Trade: type 1' 'Industry: type 5' 'Industry: type 10' 'Legal Services'
+ 'Advertising' 'Trade: type 5' 'Cleaning' 'Industry: type 13'
+ 'Trade: type 4' 'Telecom' 'Industry: type 8' 'Realtor' 'Industry: type 6']  -> check the percentage first or TargetEncoding
+
+EXT_SOURCE_1 unique values: XXX 
+
+EXT_SOURCE_2 unique values: XXX
+
+EXT_SOURCE_3 unique values: XXX
+
+
+APARTMENTS_AVG unique values: XXX mister EDA
+
+BASEMENTAREA_AVG unique values: XXX mister EDA
+
+YEARS_BEGINEXPLUATATION_AVG unique values: XXX mister EDA
+
+
+YEARS_BUILD_AVG unique values: YEARS_BUILD_AVG
+
+COMMONAREA_AVG unique values: XXX mister EDA
+
+
+ELEVATORS_AVG unique values: XXX mister EDA
+
+
+ENTRANCES_AVG unique values: XXX mister EDA
+
+
+FLOORSMAX_AVG unique values: XX mister EDA
+
+FLOORSMIN_AVG unique values: XX mister EDA
+
+LANDAREA_AVG unique values: XX mister EDA
+
+LIVINGAPARTMENTS_AVG unique values: XX mister EDA
+
+LIVINGAREA_AVG unique values: XX mister EDA
+
+NONLIVINGAPARTMENTS_AVG unique values: XX mister EDA
+
+NONLIVINGAREA_AVG unique values: XX mister EDA
+
+APARTMENTS_MODE unique values: XX mister EDA
+
+BASEMENTAREA_MODE unique values: [0.0383 0.0538    nan ... 0.2843 0.5461 0.2808]
+
+YEARS_BEGINEXPLUATATION_MODE unique values: XX mister EDA
+
+YEARS_BUILD_MODE unique values: XX mister EDA
+
+COMMONAREA_MODE unique values: XX mister EDA
+
+ELEVATORS_MODE unique values: XX mister EDA
+
+ENTRANCES_MODE unique values: XX mister EDA
+
+FLOORSMAX_MODE unique values: XX mister EDA
+
+FLOORSMIN_MODE unique values: XX mister EDA
+
+LANDAREA_MODE unique values: XX mister EDA
+
+LIVINGAPARTMENTS_MODE unique values: XX mister EDA
+
+LIVINGAREA_MODE unique values: [0.0198 0.0554    nan ... 0.3491 0.6257 0.9667]
+
+NONLIVINGAPARTMENTS_MODE unique values: XX mister EDA
+
+NONLIVINGAREA_MODE unique values: XX mister EDA
+
+APARTMENTS_MEDI unique values: XX mister EDA
+
+BASEMENTAREA_MEDI unique values: XX mister EDA
+
+YEARS_BEGINEXPLUATATION_MEDI unique values: XX mister EDA
+
+YEARS_BUILD_MEDI unique values: XX mister EDA
+
+COMMONAREA_MEDI unique values: XX mister EDA
+
+ELEVATORS_MEDI unique values: XX mister EDA
+
+ENTRANCES_MEDI unique values:XX mister EDA
+
+FLOORSMAX_MEDI unique values: XX mister EDA
+
+FLOORSMIN_MEDI unique values: XX mister EDA
+
+LANDAREA_MEDI unique values: XX mister EDA
+
+LIVINGAPARTMENTS_MEDI unique values: XX mister EDA
+
+LIVINGAREA_MEDI unique values: XX mister EDA
+
+NONLIVINGAPARTMENTS_MEDI unique values: XX mister EDA
+
+NONLIVINGAREA_MEDI unique values: XX mister EDA
+
+FONDKAPREMONT_MODE unique values: XX mister EDA
+
+HOUSETYPE_MODE unique values: XX mister EDA
+
+TOTALAREA_MODE unique values: XX mister EDA
+
+WALLSMATERIAL_MODE unique values: XX mister EDA
+
+EMERGENCYSTATE_MODE unique values: XX mister EDA
+
+OBS_30_CNT_SOCIAL_CIRCLE unique values: [  2.   1.   0.   4.   8.  10.  nan   7.   3.   6.   5.  12.   9.  13.
+  11.  14.  22.  16.  15.  17.  20.  25.  19.  18.  21.  24.  23.  28.
+  26.  29.  27.  47. 348.  30.]  -> check the nan 
+
+DEF_30_CNT_SOCIAL_CIRCLE unique values: [ 2.  0.  1. nan  3.  4.  5.  6.  7. 34.  8.]
+
+OBS_60_CNT_SOCIAL_CIRCLE unique values: [  2.   1.   0.   4.   8.  10.  nan   7.   3.   6.   5.  12.   9.  13.
+  11.  14.  21.  15.  22.  16.  20.  25.  17.  19.  18.  24.  23.  28.
+  29.  27.  47. 344.  30.  26.]
+
+DEF_60_CNT_SOCIAL_CIRCLE unique values: [ 2.  0.  1. nan  3.  5.  4.  7. 24.  6.]
+
+DAYS_LAST_PHONE_CHANGE unique values: [-1134.  -828.  -815. ... -3988. -3899. -3538.]
+
+FLAG_DOCUMENT_2 unique values: [0 1]
+
+FLAG_DOCUMENT_3 unique values: [1 0]
+
+FLAG_DOCUMENT_4 unique values: [0 1]
+
+FLAG_DOCUMENT_5 unique values: [0 1]
+
+FLAG_DOCUMENT_6 unique values: [0 1]
+
+FLAG_DOCUMENT_7 unique values: [0 1]
+
+FLAG_DOCUMENT_8 unique values: [0 1]
+
+FLAG_DOCUMENT_9 unique values: [0 1]
+
+FLAG_DOCUMENT_10 unique values: [0 1]
+
+FLAG_DOCUMENT_11 unique values: [0 1]
+
+FLAG_DOCUMENT_12 unique values: [0 1]
+
+FLAG_DOCUMENT_13 unique values: [0 1]
+
+FLAG_DOCUMENT_14 unique values: [0 1]
+
+FLAG_DOCUMENT_15 unique values: [0 1]
+
+FLAG_DOCUMENT_16 unique values: [0 1]
+
+FLAG_DOCUMENT_17 unique values: [0 1]
+
+FLAG_DOCUMENT_18 unique values: [0 1]
+
+FLAG_DOCUMENT_19 unique values: [0 1]
+
+FLAG_DOCUMENT_20 unique values: [0 1]
+
+FLAG_DOCUMENT_21 unique values: [0 1]
+
+
+# check the nulls 
+
+AMT_REQ_CREDIT_BUREAU_HOUR unique values: [ 0. nan  1.  2.  3.  4.]
+
+AMT_REQ_CREDIT_BUREAU_DAY unique values: [ 0. nan  1.  3.  2.  4.  5.  6.  9.  8.]
+
+AMT_REQ_CREDIT_BUREAU_WEEK unique values: [ 0. nan  1.  3.  2.  4.  5.  6.  8.  7.]
+
+AMT_REQ_CREDIT_BUREAU_MON unique values: [ 0. nan  1.  2.  6.  5.  3.  7.  9.  4. 11.  8. 16. 12. 14. 10. 13. 17.
+ 24. 19. 15. 23. 18. 27. 22.]
+
+AMT_REQ_CREDIT_BUREAU_QRT unique values: [  0.  nan   1.   2.   4.   3.   8.   5.   6.   7. 261.  19.]
+
+AMT_REQ_CREDIT_BUREAU_YEAR unique values: [ 1.  0. nan  2.  4.  5.  3.  8.  6.  9.  7. 10. 11. 13. 16. 12. 25. 23.
+ 15. 14. 22. 17. 19. 18. 21. 20.]
+
